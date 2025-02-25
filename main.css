@@ -1,27 +1,32 @@
-#red {
-  border-top-color: #f00;
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: white;
 }
 
-#orange {
-  border-top-color: #ffa500;
+.rainbow {
+  position: relative;
+  width: 600px; /* Increased size */
+  height: 300px; /* Increased height */
 }
 
-#yellow {
-  border-top-color: #ff0;
+.rainbow div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 20px solid transparent; /* Thicker border for visibility */
+  left: 0;
+  bottom: 0;
 }
 
-#green {
-  border-top-color: #00bc3f;
-}
-
-#blue {
-  border-top-color: #06f;
-}
-
-#indigo {
-  border-top-color: #8a2be2;
-}
-
-#violet {
-  border-top-color: #d300c9;
-}
+/* Adding spacing with padding */
+#red { border-top-color: #f00; transform: scale(0.94); }
+#orange { border-top-color: #ffa500; transform: scale(0.92); top: 10px; }
+#yellow { border-top-color: #ff0; transform: scale(0.84); top: 20px; }
+#green { border-top-color: #00bc3f; transform: scale(0.76); top: 30px; }
+#blue { border-top-color: #06f; transform: scale(0.68); top: 40px; }
+#indigo { border-top-color: #8a2be2; transform: scale(0.60); top: 50px; }
+#violet { border-top-color: #d300c9; transform: scale(0.52); top: 60px; }
